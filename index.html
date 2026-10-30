@@ -17,7 +17,7 @@
         document.getElementById('send').addEventListener('click', async () => {
             try {
                 // バックエンドのメール送信APIを呼び出す
-                const response = await fetch('/api/send-email', { method: 'POST' });
+                const response = await fetch('send-email', { method: 'POST' });
                 const data = await response.json();
                 
                 if (data.success) {
