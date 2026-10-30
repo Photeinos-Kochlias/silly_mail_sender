@@ -1,0 +1,1 @@
+# silly_mail_sender
