@@ -19,8 +19,17 @@
     </style>
 </head>
 <body>
-<h1>Test</h1>
+    <h1>Test</h1>
+    <button id="send">send</button>
 </body>
 <script>
+    const button = document.GetElementById('send') as HTMLButtonElement;
+
+    if (button) {
+        button.addEventListener('click', () => {
+            alert('TypeScriptの処理が実行されました！');
+            console.log('Button clicked!');
+        });
+    }
 </script>
 </html>
