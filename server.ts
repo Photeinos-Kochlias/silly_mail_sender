@@ -19,7 +19,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-app.post('/api/send-email', async (req: Request, res: Response): Promise<void> => {
+app.post('send-email', async (req: Request, res: Response): Promise<void> => {
     try {
         // Read the external HTML email template
         const templatePath = path.join(__dirname, 'email-template.html');
